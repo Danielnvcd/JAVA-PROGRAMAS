@@ -1,0 +1,18 @@
+QTR-1A sensor de lienas laterales
+ 
+Pulsador 6x6mm.
+
+Switch
+
+resistencia de 20kohms
+
+Para Open Lamborghino necesitamos 6 tipos conectores:
+
+1 x Pin header female 11 pines.
+2 x Pin header female 15 pines.
+2 x Pin header female 8 pines.
+2 x Pin header female 3 pines.
+2 x Pin header female 2 pines.
+1x Pin Header female 4 pines.
+
+Buzzer

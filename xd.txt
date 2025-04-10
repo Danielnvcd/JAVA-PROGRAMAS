@@ -1,0 +1,80 @@
+package javaapplication6;
+
+import java.util.Scanner;
+
+public class JavaApplication6 {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        do {
+            mostrarMenu();
+            opcion = scanner.nextInt();
+            seleccionarproducto(opcion, scanner);
+        } while (opcion != 5);
+
+        System.out.println("termino el programa.");
+    }
+
+    public static void mostrarMenu() {
+        System.out.println("Menu de Productos de Binomios");
+        System.out.println("1. Binomio al Cuadrado");
+        System.out.println("2. Binomio al Cubo");
+        System.out.println("3. Binomios con Término Común");
+        System.out.println("4. Binomios Conjugados");
+        System.out.println("5. Salir");
+        System.out.print("selecciona una opcion ");
+    }
+
+    public static void seleccionarproducto(int opcion, Scanner scanner) {
+        switch (opcion) {
+            case 1 -> calcularbinomiocuadrado(scanner);
+            case 2 -> calcularbinomiocubo(scanner);
+            case 3 -> calcularbinomiosconterminocomun(scanner);
+            case 4 -> calcularbinomiosconjugados(scanner);
+            case 5 -> {
+            }
+            default -> System.out.println("opcion invalida");
+        }
+    }
+
+    public static void calcularbinomiocuadrado(Scanner scanner) {
+        System.out.println("Ingrese el primer termino del binomio: ");
+        int a = scanner.nextInt();
+        System.out.println("Ingrese el segundo termino del binomio: ");
+        int b = scanner.nextInt();
+        int resultado = (int) Math.pow(a, 2) + 2 * a * b + (int) Math.pow(b, 2);
+        System.out.println("el resultado del binomio al cuadrado es: " + resultado);
+    }
+
+    public static void calcularbinomiocubo(Scanner scanner) {
+        System.out.println("Ingrese el primer termino del binomio: ");
+        int a = scanner.nextInt();
+        System.out.println("Ingrese el segundo termino del binomio: ");
+        int b = scanner.nextInt();
+        int resultado = (int) Math.pow(a, 3) + 3 * (int) Math.pow(a, 2) * b + 3 * a * (int) Math.pow(b, 2) + (int) Math.pow(b, 3);
+        System.out.println("el resultado del binomio al cubo es: " + resultado);
+    }
+
+    public static void calcularbinomiosconterminocomun(Scanner scanner) {
+        System.out.println("Ingrese el primer termino del binomio: ");
+        int a = scanner.nextInt();
+        System.out.println("Ingrese el segundo termino del binomio: ");
+        int b = scanner.nextInt();
+        System.out.println("Ingrese el termino comun: ");
+        int c = scanner.nextInt();
+        int resultado = (int) Math.pow(a, 2) + (2 * a * b * c) + (int) Math.pow(c, 2);
+        System.out.println("el resultado de los binomios con término comun es: " + resultado);
+    }
+
+    public static void calcularbinomiosconjugados(Scanner scanner) {
+        System.out.println("Ingrese el primer termino del binomio: ");
+        int a = scanner.nextInt();
+        System.out.println("Ingrese el segundo termino del binomio: ");
+        int b = scanner.nextInt();
+        int resultado = (int) Math.pow(a, 2) - (int) Math.pow(b, 2);
+        System.out.println("el resultado de los binomios conjugados es: " + resultado);
+    }
+}
+

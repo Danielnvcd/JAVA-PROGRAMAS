@@ -1,0 +1,13 @@
+f'(x) = (x)'√(x+1) + x(√(x+1))'
+
+Ahora, calculamos las derivadas de cada término:
+
+f'(x) = 1√(x+1) + x(1/2)(x+1)^(-1/2)(x)'
+
+Simplificando un poco, tenemos:
+
+f'(x) = 1/√(x+1) + (x^2)/(2√(x+1)(x+1))
+
+Por lo tanto, la derivada de x√(x+1) es:
+
+f'(x) = 1/√(x+1) + (x^2)/(2√(x+1)(x+1))

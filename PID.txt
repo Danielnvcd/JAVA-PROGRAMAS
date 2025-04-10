@@ -1,0 +1,25 @@
+	PID son las siglas en inglés de "Proporcional, Integral, Derivativo", que se refieren a las tres componentes principales de un controlador PID.
+
+La componente proporcional (P) es una medida de la magnitud del error actual en relación con el valor deseado, y el controlador reacciona proporcionalmente a ese error para corregirlo.
+
+La componente integral (I) se enfoca en el historial de errores y corrige el error acumulado a lo largo del tiempo. La integral ayuda a eliminar cualquier error persistente en el sistema y a llevar la salida del controlador a su valor deseado.
+
+La componente derivativa (D) se enfoca en la tasa de cambio del error y ayuda a predecir la tendencia futura del error, permitiendo al controlador reaccionar de manera proactiva antes de que el error se vuelva demasiado grande.
+
+Combinando estas tres componentes en un controlador PID, se puede ajustar el sistema de control para responder de manera efectiva a los cambios en las condiciones del proceso y proporcionar un control preciso y estable en una amplia gama de aplicaciones.
+
+Para ajustar el PID de un robot seguidor de líneas, te recomiendo seguir los siguientes pasos:
+
+Primero, asegúrate de haber calibrado correctamente los sensores de línea. Esto es importante para obtener lecturas precisas y confiables de los sensores.
+
+Comienza con valores iniciales de Kp, Ki y Kd de 0 y ejecuta tu código en el robot seguidor de líneas.
+
+Observa el comportamiento del robot. Si se tambalea demasiado o gira demasiado rápido, aumenta gradualmente el valor de Kp. Si el robot se mueve lentamente o no puede mantener la línea, aumenta gradualmente el valor de Ki. Si el robot oscila demasiado, aumenta gradualmente el valor de Kd.
+
+Después de cada ajuste, ejecuta el código y observa el comportamiento del robot. Continúa ajustando los valores de Kp, Ki y Kd hasta que el robot pueda seguir la línea con precisión y de manera consistente.
+
+Si tienes dificultades para encontrar los valores óptimos de Kp, Ki y Kd, puedes utilizar un método de ajuste automático de PID, como el método de Ziegler-Nichols o el método de Cohen-Coon. Estos métodos pueden ser útiles para encontrar valores iniciales de Kp, Ki y Kd que puedan ser refinados mediante ajustes manuales.
+
+Una vez que hayas encontrado valores satisfactorios para Kp, Ki y Kd, prueba el robot en diferentes configuraciones y situaciones para asegurarte de que sigue la línea de manera consistente en diferentes condiciones.
+
+Recuerda que el ajuste de PID puede requerir tiempo y paciencia, y es importante no ajustar los valores demasiado rápido. Ajusta gradualmente los valores de Kp, Ki y Kd y observa el comportamiento del robot después de cada ajuste.
