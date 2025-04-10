@@ -1,43 +1,28 @@
+
+package javaapplication15;
 import java.util.Scanner;
 
-public class Main {
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    
-    char opcion;
-    int num1, num2;
-    
-    System.out.println("Menu");
-    System.out.println("a. Sumar");
-    System.out.println("b. Restar");
-    System.out.println("c. Salir");
-    
-    System.out.print("ingresee la opcion que desea realizar: ");
-    opcion = sc.next().charAt(0);
-    
-    switch (opcion) {
-      case 'a':
-        System.out.print("ingrese el primer numero: ");
-        num1 = sc.nextInt();
-        System.out.print("ingrese el segundo numero: ");
-        num2 = sc.nextInt();
-        System.out.println("la suma es " + (num1 + num2));
-        break;
-        case 'b':
-        System.out.print("ingrese el primer numero: ");
-        num1 = sc.nextInt();
-        System.out.print("ingrese el segundo numero: ");
-        num2 = sc.nextInt();
-        System.out.println("la resta es " + (num1 - num2));
-        break;
+public class JavaApplication15 {
+
+    public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+          while (true) {
+
+        System.out.println("ingresar numero en notacion cientifica");
+        String numero = scanner.next();      
         
-      case 'c':
-        System.out.println("termino el programa");
-        break;
-        
-      default:
-        System.out.println("opcion no valida");
-        break;
+ if (numero.contains("e") || numero.contains("E")) {
+     try {
+       double numero1 = Double.parseDouble(numero);
+      System.out.println("El numero ingresado es " + numero1);
+      break;
+            } catch (NumberFormatException e) {
+            }
+        } else {
+
+            System.out.println("el numero ingresado no es valido");
+         
+        }
     }
-  }
+}
 }
