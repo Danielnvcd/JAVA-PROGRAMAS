@@ -1,7 +1,0 @@
-Este método recibe como argumento el número entero a convertir y devuelve una cadena de caracteres (String) que representa el número en formato hexadecimal.
-
-Integer.toBinaryString(decimal): Este método recibe como argumento un número entero en formato decimal y devuelve una cadena de caracteres (String) que representa el número en formato binario.
-
-Integer.toOctalString(decimal): Este método recibe como argumento un número entero en formato decimal y devuelve una cadena de caracteres (String) que representa el número en formato octal.
-
-Integer.toHexString(decimal): Este método recibe como argumento un número entero en formato decimal y devuelve una cadena de caracteres (String) que representa el número en formato hexadecimal.
